@@ -1,4 +1,5 @@
 AllCops:
+  NewCops: enable
   Exclude:
     - 'lib/tasks/ci.rake'
     - 'lib/tasks/auto_annotate_models.rake'
@@ -44,6 +45,7 @@ Metrics/BlockLength:
     - 'lib/**/*'
     - 'app/interactions/**/*.rb'
     - 'app/graphql/**/*.rb'
+    - '**/concerns/**/*.rb'
 Metrics/CyclomaticComplexity:
   Enabled: false
 Metrics/MethodLength:
@@ -63,9 +65,7 @@ Lint/MissingSuper:
 Metrics/ParameterLists:
   Enabled: false
 Naming/VariableNumber:
-  Exclude:
-    - 'app/interactions/**/*.rb'
-    - 'app/graphql/**/*.rb'
+  Enabled: false
 Metrics/ModuleLength:
   Enabled: true
   Exclude:
