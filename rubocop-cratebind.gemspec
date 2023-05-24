@@ -5,11 +5,11 @@ require_relative 'lib/rubocop/cratebind/version'
 Gem::Specification.new do |spec|
   spec.name = 'rubocop-cratebind'
   spec.version = RuboCop::Cratebind::VERSION
-  spec.authors = ['Omar Garcia']
-  spec.email = ['omar@cratebind.com']
+  spec.email = 'hello@cratebind.com'
+  spec.authors = 'Cratebind'
 
-  spec.summary = 'Rubocop styleguide for Cratebind projects.'
-  spec.description = 'Rubocop styleguide for Cratebind projects.'
+  spec.summary = 'RuboCop Cratebind'
+  spec.description = 'RuboCop styleguide for Cratebind projects.'
   spec.homepage = 'https://github.com/cratebind/rubocop-cratebind'
   spec.required_ruby_version = '>= 2.6.0'
 
@@ -30,9 +30,9 @@ Gem::Specification.new do |spec|
 
   # Uncomment to register a new dependency of your gem
   # spec.add_dependency 'example-gem', '~> 1.0'
+  spec.add_dependency "rubocop", ">= 1.37"
+  spec.add_dependency "rubocop-rails", ">= 2.17"
 
   # For more information and examples about making a new gem, check out our
   # guide at: https://bundler.io/guides/creating_gem.html
-
-  spec.add_runtime_dependency 'rubocop'
 end
