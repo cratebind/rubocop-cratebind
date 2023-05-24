@@ -1,5 +1,5 @@
 AllCops:
-  NewCops: enable
+  NewCops: disable
   Exclude:
     - 'lib/tasks/ci.rake'
     - 'lib/tasks/auto_annotate_models.rake'
