@@ -1,0 +1,73 @@
+AllCops:
+  Exclude:
+    - 'lib/tasks/ci.rake'
+    - 'lib/tasks/auto_annotate_models.rake'
+    - 'spec/rails_helper.rb'
+    - 'spec/spec_helper.rb'
+    - 'db/seeds.rb'
+    - 'db/schema.rb'
+    - 'db/migrate/**/*'
+    - 'config/**/*'
+    - 'bin/**/*'
+    - 'Gemfile'
+    - 'Guardfile'
+    - 'vendor/**/*'
+    - 'tmp/**/*'
+    - 'spec/support/**/*'
+    - 'spec/fixtures/**/*'
+    - 'node_modules/**/*'
+Rails:
+  Enabled: true
+Rails/Metrics/LineLength:
+    Max: 100
+Rails/Style/HashSyntax:
+  Enabled: false
+Style/EmptyMethod:
+  Enabled: false
+Style/PercentLiteralDelimiters:
+  Enabled: false
+Naming/MemoizedInstanceVariableName:
+  Enabled: false
+Rails/SkipsModelValidations:
+  Enabled: false
+Style/Documentation:
+  Enabled: false
+Style/CollectionMethods:
+  Enabled: false
+Style/Lambda:
+  Enabled: false
+Metrics/AbcSize:
+  Enabled: false
+Metrics/BlockLength:
+  Exclude:
+    - 'spec/**/*'
+    - 'lib/**/*'
+    - 'app/interactions/**/*.rb'
+    - 'app/graphql/**/*.rb'
+Metrics/CyclomaticComplexity:
+  Enabled: false
+Metrics/MethodLength:
+  Enabled: true
+  Max: 40
+  Exclude:
+    - 'app/interactions/**/*.rb'
+Metrics/ClassLength:
+  Enabled: true
+  Max: 250
+Style/WordArray:
+  Enabled: false
+Metrics/PerceivedComplexity:
+  Enabled: false
+Lint/MissingSuper:
+  Enabled: false
+Metrics/ParameterLists:
+  Enabled: false
+Naming/VariableNumber:
+  Exclude:
+    - 'app/interactions/**/*.rb'
+    - 'app/graphql/**/*.rb'
+Metrics/ModuleLength:
+  Enabled: true
+  Exclude:
+    - 'app/interactions/**/*.rb'
+    - 'app/graphql/**/*.rb'
